@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shuva.kcms.LoginActivity">
+
+
+
+    <Button
+        android:id="@+id/btnLoginCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:onClick="onClickLoginCheck"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="61dp"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="------------------Or------------------"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtRegAs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Register As"
+        android:textSize="27sp"
+        android:textStyle="bold"/>
+
+
+    <ImageButton
+        android:id="@+id/btnRegs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="@android:color/background_light"
+        android:focusableInTouchMode="true"
+        android:forceHasOverlappingRendering="false"
+        android:onClick="onClickRegisterCheck"
+        app:srcCompat="@mipmap/next" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btnRegs"
+        android:layout_alignLeft="@+id/txtRegAs"
+        android:layout_alignStart="@+id/txtRegAs"
+        android:layout_alignRight="@+id/txtRegAs"
+        android:layout_alignEnd="@+id/txtRegAs">
+
+        <RadioButton
+            android:id="@+id/rdbGuardian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_alignLeft="@+id/txtRegAs"
+            android:layout_alignStart="@+id/txtRegAs"
+            android:layout_below="@+id/rdbFaculty"
+            android:layout_marginBottom="37dp"
+            android:width="130dp"
+            android:text="Parent and Student"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rdbFaculty"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnRegs"
+            android:layout_alignLeft="@+id/btnLoginCheck"
+            android:layout_alignStart="@+id/btnLoginCheck"
+            android:layout_marginBottom="24dp"
+            android:text="Faculty"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+</RelativeLayout>
